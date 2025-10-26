@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dharma's Homestay - Mavinkurve</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="light-mode">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <h1 data-lang="brandTitle">Dharma's Homestay</h1>
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="active" data-lang="nav.home">Home</a>
+            <a href="#map" data-lang="nav.map">Map</a>
+            <a href="#amenities" data-lang="nav.amenities">Amenities</a>
+            <a href="#attractions" data-lang="nav.attractions">Nearby Attractions</a>
+            <a href="#contact" data-lang="nav.contact">Contact</a>
+        </div>
+        <div class="nav-toggles">
+            <div class="toggle-wrapper">
+                <label class="switch">
+                    <input type="checkbox" id="themeToggle" aria-label="Toggle theme">
+                    <span class="slider">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                    </span>
+                </label>
+            </div>
+            <div class="toggle-wrapper">
+                <label class="switch">
+                    <input type="checkbox" id="langToggle" aria-label="Toggle language">
+                    <span class="slider">
+                        <span class="lang-label">E</span>
+                        <span class="lang-label">ಕ</span>
+                    </span>
+                </label>
+            </div>
+        </div>
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <!-- To replace hero background, update the image at assets/images/hero-bg.jpg -->
+    <section id="home" class="section hero">
+        <div class="hero-content">
+            <h1 class="main-title" data-lang="mainTitle">Welcome to Dharma's Homestay</h1>
+            <p class="subtitle" data-lang="subtitle">Your Perfect Getaway in Mavinkurve</p>
+            <div class="features-grid">
+                <div class="feature">
+                    <i class="fas fa-home"></i>
+                    <h3 data-lang="feature1Title">Entire Floor</h3>
+                    <p data-lang="feature1Desc">Complete second floor with privacy</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-bed"></i>
+                    <h3 data-lang="feature2Title">2 Bedrooms</h3>
+                    <p data-lang="feature2Desc">Comfortable accommodation</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-compass"></i>
+                    <h3 data-lang="feature4Title">Prime Location</h3>
+                    <p data-lang="feature4Desc">Near Mavinkurve Bridge</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="map" class="section">
+        <h2 class="section-title" data-lang="mapTitle">Find Us</h2>
+        <div class="map-container">
+            <div class="map-wrapper">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3071.2191249431444!2d74.4670842!3d14.2698228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbc3b18b9446803%3A0x7c850da9762f9eb0!2sDharma's%20Homestay!5e1!3m2!1sen!2sin!4v1761396067364!5m2!1sen!2sin"
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Property Section -->
+    <section id="property" class="section">
+        <h2 class="section-title" data-lang="propertyTitle">The Property</h2>
+        <div class="property-showcase">
+            <div class="property-image">
+                <img src="assets/images/house.jpg" alt="Dharma's Homestay Property" data-lang-alt="propertyImageAlt" />
+            </div>
+            <div class="property-description">
+                <p data-lang="propertyDesc">Discover our charming homestay nestled in the heart of Mavinkurve. The property offers a perfect blend of modern comfort and traditional hospitality, featuring a spacious second floor entirely dedicated to our guests.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section id="amenities" class="section">
+        <h2 class="section-title" data-lang="amenitiesTitle">Our Amenities</h2>
+        <div class="amenities-grid">
+            <!-- Replace images by placing your image files in assets/images/rooms/ directory -->
+            <div class="room-card">
+                <div class="room-image">
+                    <img src="assets/images/rooms/bedroom1.jpg" alt="Master Bedroom" />
+                </div>
+                <h3 data-lang="room1Title">Master Bedroom</h3>
+                <p data-lang="room1Desc">Spacious master bedroom with beautiful views</p>
+            </div>
+            
+            <div class="room-card">
+                <div class="room-image">
+                    <img src="assets/images/rooms/bedroom2.jpg" alt="Second Bedroom" />
+                </div>
+                <h3 data-lang="room2Title">Second Bedroom</h3>
+                <p data-lang="room2Desc">Comfortable bedroom with natural lighting</p>
+            </div>
+            
+            <div class="room-card">
+                <div class="room-image">
+                    <img src="assets/images/rooms/kitchen.jpg" alt="Kitchen" />
+                </div>
+                <h3 data-lang="kitchenTitle">Modern Kitchen</h3>
+                <p data-lang="kitchenDesc">Fully equipped kitchen for your cooking needs</p>
+            </div>
+            
+            <div class="room-card">
+                <div class="room-image">
+                    <img src="assets/images/rooms/hall.jpg" alt="Hall" />
+                </div>
+                <h3 data-lang="hallTitle">Spacious Hall</h3>
+                <p data-lang="hallDesc">Large living area for relaxation and gatherings</p>
+            </div>
+            
+            <div class="room-card">
+                <div class="room-image">
+                    <img src="assets/images/rooms/balcony.jpg" alt="Balcony" />
+                </div>
+                <h3 data-lang="balconyTitle">Road-facing Balcony</h3>
+                <p data-lang="balconyDesc">Perfect spot to enjoy the surroundings</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nearby Attractions Section -->
+    <section id="attractions" class="section">
+        <h2 class="section-title" data-lang="attractionsTitle">Nearby Attractions</h2>
+        <div class="attractions-grid">
+            <!-- Replace images by placing your image files in assets/images/attractions/ directory -->
+            <div class="attraction-card">
+                <div class="attraction-image">
+                    <img src="assets/images/attractions/backwaters.jpg" alt="Sharavati Backwaters" />
+                </div>
+                <div class="attraction-content">
+                    <h3 data-lang="attractions.backwatersTitle">Sharavati Backwaters</h3>
+                    <p data-lang="attractions.backwatersDesc">Enjoy scenic boating in the beautiful backwaters</p>
+                    <a href="https://maps.app.goo.gl/qHqgiwoQzgYiqiHv9" target="_blank" class="map-link">
+                        <i class="fas fa-map-marker-alt"></i> <span data-lang="contact.viewMap">View on Maps</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="attraction-card">
+                <div class="attraction-image">
+                    <img src="assets/images/attractions/kasarkod.jpg" alt="Kasarkod Beach" />
+                </div>
+                <div class="attraction-content">
+                    <h3 data-lang="attractions.kasarkodTitle">Kasarkod Eco Beach</h3>
+                    <p data-lang="attractions.kasarkodDesc">Pristine eco-friendly beach with clean waters</p>
+                    <a href="https://maps.app.goo.gl/9zF2B2mJWpe3PqUa8" target="_blank" class="map-link">
+                        <i class="fas fa-map-marker-alt"></i> <span data-lang="contact.viewMap">View on Maps</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="attraction-card">
+                <div class="attraction-image">
+                    <img src="assets/images/attractions/mangrove.jpg" alt="Kandla Mangrove Forest" />
+                </div>
+                <div class="attraction-content">
+                    <h3 data-lang="attractions.mangroveTitle">Kandla Mangrove Forest</h3>
+                    <p data-lang="attractions.mangroveDesc">Explore the rich mangrove ecosystem</p>
+                    <a href="https://maps.app.goo.gl/NzaycfQ2hke5dBaG7" target="_blank" class="map-link">
+                        <i class="fas fa-map-marker-alt"></i> <span data-lang="contact.viewMap">View on Maps</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="attraction-card">
+                <div class="attraction-image">
+                    <img src="assets/images/attractions/colonel.jpg" alt="Colonel Hill Monument" />
+                </div>
+                <div class="attraction-content">
+                    <h3 data-lang="attractions.colonelTitle">Colonel Hill Monument</h3>
+                    <p data-lang="attractions.colonelDesc">Historical monument with panoramic views</p>
+                    <a href="https://maps.app.goo.gl/KBneSdxnBwSEdtK86" target="_blank" class="map-link">
+                        <i class="fas fa-map-marker-alt"></i> <span data-lang="contact.viewMap">View on Maps</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="attraction-card">
+                <div class="attraction-image">
+                    <img src="assets/images/attractions/ramathirtha.jpg" alt="Ramathirtha" />
+                </div>
+                <div class="attraction-content">
+                    <h3 data-lang="attractions.ramathirthaTitle">Ramathirtha</h3>
+                    <p data-lang="attractions.ramathirthaDesc">Sacred site with natural beauty</p>
+                    <a href="https://maps.app.goo.gl/yi3hGJvksEiDjwJE9" target="_blank" class="map-link">
+                        <i class="fas fa-map-marker-alt"></i> <span data-lang="contact.viewMap">View on Maps</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="attraction-card">
+                <div class="attraction-image">
+                    <img src="assets/images/attractions/bridge.jpg" alt="Karki Hanging Bridge" />
+                </div>
+                <div class="attraction-content">
+                    <h3 data-lang="attractions.bridgeTitle">Karki Hanging Bridge</h3>
+                    <p data-lang="attractions.bridgeDesc">Scenic suspension bridge experience</p>
+                    <a href="https://maps.app.goo.gl/DCUYUUTUpuWo7cDK6" target="_blank" class="map-link">
+                        <i class="fas fa-map-marker-alt"></i> <span data-lang="contact.viewMap">View on Maps</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="attraction-card">
+                <div class="attraction-image">
+                    <img src="assets/images/attractions/jogfalls.jpg" alt="Jog Falls" />
+                </div>
+                <div class="attraction-content">
+                    <h3 data-lang="attractions.jogfallsTitle">Jog Falls</h3>
+                    <p data-lang="attractions.jogfallsDesc">Second highest plunge waterfall in India</p>
+                    <a href="https://maps.app.goo.gl/FHs718SP49fJVHdc6" target="_blank" class="map-link">
+                        <i class="fas fa-map-marker-alt"></i> <span data-lang="contact.viewMap">View on Maps</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="attraction-card">
+                <div class="attraction-image">
+                    <img src="assets/images/attractions/apsarakonda.jpg" alt="Apsarakonda" />
+                </div>
+                <div class="attraction-content">
+                    <h3 data-lang="attractions.apsarakondaTitle">Apsarakonda</h3>
+                    <p data-lang="attractions.apsarakondaDesc">Beautiful beach and waterfall combination</p>
+                    <a href="https://maps.app.goo.gl/Tsq2pf9NKCPhq7UM9" target="_blank" class="map-link">
+                        <i class="fas fa-map-marker-alt"></i> <span data-lang="contact.viewMap">View on Maps</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="attraction-card">
+                <div class="attraction-image">
+                    <img src="assets/images/attractions/idagunji.jpg" alt="Idagunji Temple" />
+                </div>
+                <div class="attraction-content">
+                    <h3 data-lang="attractions.idagunjiTitle">Idagunji Temple</h3>
+                    <p data-lang="attractions.idagunjiDesc">Ancient temple with rich heritage</p>
+                    <a href="https://maps.app.goo.gl/Nmjn9m9YLiwUVx7i6" target="_blank" class="map-link">
+                        <i class="fas fa-map-marker-alt"></i> <span data-lang="contact.viewMap">View on Maps</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2 class="section-title" data-lang="contactTitle">Contact Us</h2>
+        <div class="contact-info">
+            <div class="contact-card">
+                <i class="fas fa-user"></i>
+                <h3 data-lang="contact.name">Mr. Dharma</h3>
+                <p data-lang="contact.role">Property Owner and Caretaker</p>
+            </div>
+            
+            <div class="contact-card">
+                <a href="https://wa.me/919242382629" target="_blank" class="whatsapp-link">
+                    <i class="fab fa-whatsapp"></i>
+                    <h3 data-lang="contact.whatsapp">WhatsApp</h3>
+                    <p>+91 92423 82629</p>
+                </a>
+            </div>
+            
+            <div class="contact-card">
+                <a href="tel:+918861047296" class="contact-link phone-link">
+                    <i class="fas fa-phone"></i>
+                    <h3 data-lang="contact.altPhone">Alternate Number</h3>
+                    <p>+91 88610 47296</p>
+                </a>
+            </div>
+            
+            <div class="contact-card">
+                <i class="fas fa-home"></i>
+                <h3 data-lang="contact.addressTitle">Location</h3>
+                <p data-lang="contact.address">Near Mavinkurve Bridge<br>Honnavar - Mavinkurve Road<br>Mavinkurve, Karnataka</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Dharma's Homestay. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/translations.js"></script>
+</body>
+</html>
